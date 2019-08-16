@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Temperatura Certa</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  
+  <nav class="navbar fixed-top flex-md-nowrap p-0 shadow-sm">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Temperatura Certa</a>
+  </nav>
+  <body onload="animar()">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="cards">
+        
+      <nav class="col-md-2 d-none d-md-block bg-pink sidebar">
+        <div class="sidebar-sticky">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Workspace</span>
+          </h6>
+          <ul class="nav flex-column">
+           <!-- <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="git-pull-request"></span>
+                Temperatura Atual
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="activity"></span>
+                Previsão Diária
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="pen-tool"></span>
+                Contato
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="info"></span>
+                Info
+              </a>
+            </li>-->
+          </ul>   
+          </div>
+        </div>
+      </nav>
+      </div>
+    </div>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="row mt-4">
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-header">
+               <center><b onclick="oi()">Temperatura Nacional</b></center>
+              </div>
+              <div class="card-body">
+                <table class="table table-sm table-striped">
+                  <thead>
+                    <th>Região</th>
+                    <th>T (Celsius)</th>
+                    <th>Máximo</th>
+                    <th>Mínimo</th>
+                    <th>Status</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Nordeste</td>
+                      <td>33ºC</td>
+                      <td>37ºC</td>
+                      <td>29ºC</td>
+                      <td class="align-middle">
+                        <div class="progress" style="height: .6rem;">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Sudeste</td>
+                      <td>25ºC</td>
+                      <td>30ºC</td>
+                      <td>22ºC</td>
+                      <td class="align-middle">
+                        <div class="progress" style="height: .6rem;">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="20"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Sul</td>
+                      <td>20ºC</td>
+                      <td>22ºC</td>
+                      <td>19ºC</td>
+                      <td class="align-middle">
+                        <div class="progress" style="height: .6rem;">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="10"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Norte</td>
+                      <td>29ºC</td>
+                      <td>27ºC</td>
+                      <td>31ºC</td>
+                      <td class="align-middle">
+                        <div class="progress" style="height: .6rem;">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-header">
+               <center><b>Cidades mais quentes do Brasil</b></center>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item disabled" aria-disabled="true">João Pessoa</li>
+                <li class="list-group-item">Rio de Janeiro</li>
+                <li class="list-group-item">São Paulo</li>
+                <li class="list-group-item">Rio Branco</li>
+              </ul>
+            </div>
+          
+        </div>
+            
+            
+      
+      </div>
+      
+      <div class="row mt-4 shared-networks">
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-header">
+                <div id="Chart">
+                  <canvas id="myChart"></canvas>
+          </div>
+                      
+                  </div>
+                    <!--<canvas id="myChart"></canvas>
+                    <script>
+                      
+
+                      let chart = new Chart (document.getElementId("myChart"),{
+                        type:'bar',
+                        data: {
+                         labels: ["Norte", "Nordeste", "Sul","Sudeste"],
+                        datasets:[
+                          {
+                            label: 'Regiões mais quentes',
+                            data:[20,30,5,10]
+                          }
+                        ]
+                        }
+                          
+
+                      })
+                      
+                    </script>-->
+                </div>
+                </div>
+                 </div>    
+                </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="principal.js"></script>
+  <script src="js/feather.js"></script>
+  <script src="js/grafico.js"></script>
+  <script>
+    feather.replace()
+  </script>
+  <!-- <script src="grafico-temperatura.html"></script> -->
+  <!--<script src="js/chart@2.8.0.js"></script>-->
+</main>
+</body>
+</body>
+</html>

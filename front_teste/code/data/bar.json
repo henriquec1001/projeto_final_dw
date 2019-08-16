@@ -1,0 +1,34 @@
+[
+  {
+    "valor": "15",
+    "mes": "Jan"
+  },
+  {
+    "valor":"10",
+    "mes":"Fev"
+  },
+  {
+    "valor":"26",
+    "mes":"Mar"  
+  },
+  {
+    "valor":"80",
+    "mes":"Abr"
+  },
+  {
+    "valor":"60",
+    "mes":"Mai"
+  },
+  {
+    "valor":"55",
+    "mes":"Jun"
+  },
+  {
+    "valor":"70",
+    "mes":"Jul"
+  },
+  {
+    "valor":"8",
+    "mes":"Ago"
+  }
+]

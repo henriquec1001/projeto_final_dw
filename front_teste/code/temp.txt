@@ -1,0 +1,17 @@
+function getWeatherPlace(place) {
+    fecht('https://www.metaweather.com/api/location/search/?query='+place)
+        .then(res => res.json())
+        .then(json => getWeatherId(json))
+}
+
+function getWeatherId(weatherId) {
+    fecht(`https://www.metaweather.com/api/location/${weatherId}/`)
+        .then(res => res.json())
+        .then(json => showWeather(json))
+}
+
+function showWeather(weather) {
+    console.log(weather.consolidated_weather[0].weather_state_name)
+}
+
+getWeatherPlace('london')

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperatura Atual</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body background="Imagens\praia_temperatura.jpg" style="background-repeat: no-repeat; background-size:cover" >
+<body onload="animar()">
+    <div class="mx-auto" style="width: 650px;">
+        <div class="card border-success mb-3 mt-4 text-center" id="testecard" style="width:700px;">
+            <div class="card-body text-success ">
+                <div class="card-header" >Temperatura</div>
+                <div class="ml-2">
+                    <div class="col mt-4">
+                        <div class="row mt-4">
+                            <div class="card d-flex flex-row">
+                                <!-- Gráfico de Linha  -  Temperatura -->
+                                <div class="chart mx-auto">
+                                <canvas id="lineGraph1"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col mt-5">
+                        <div class="row">
+                            <div class="card text-white bg-primary mb-4 ml-2 h-25 placas" style="max-width: 8rem;">
+                                <div class="card-header">Média</div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-row align-items-center">
+                                            <div class="my-1">
+                                                    <h5 class="card-title" id="mediatemperatura"></h5><!--id para função em js-->
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Mês</option>
+                                                    <option>Dia</option>
+                                                    <option>Ano</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Período -->
+                            <div id="periodo" class="card text-white bg-primary mb-3 placas" style="max-width: 9rem;">
+                                <div class="card-header">Período</div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="form-group col">
+                                            <label for="inputEmail4">início</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="inputPassword4">fim</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Máximo e Mínimo -->
+                            <!-- <div class="row"> -->
+                            <!-- <div class="col"> -->
+                            <div class="card text-white bg-primary h-25 placas" style="max-width: 7rem;">
+                                <div class="card-header">Máximo</div>
+                                <div class="card-body">
+                                    <h5 class="card-title" id="maxtemperatura"></h5><!--id para função em js-->
+                                </div>
+                            </div>
+                            <!-- </div>
+                            <div class="col"> -->
+                            <div class="card text-white bg-primary h-25 placas" style="max-width: 7rem;">
+                                <div class="card-header">Mínimo</div>
+                                <div class="card-body">
+                                    <h5 class="card-title" id="mintemperatura"></h5><!--id para função em js-->
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <div class="card text-center bg-dark rounded-0">
+          <div class="row-full bg-green p-2">
+            <div class="card-header p-2">
+              <h5 class="text-white">Temperatura Certa<i class="fas fa-bullseye text-success"></i></h5>
+            </div>
+    
+            <div class="card-body p-3">
+              <div class="row-full p-2">
+                <h5 class="text-white btn btn-outline-success my-2 my-sm-0">Entre em Contato</h5>
+              </div>
+              <p class="card-text text-white">&copy;Projeto Temperatura Certa &trade; 2019, Av. 1º de Maio, Jaguaribe, João Pessoa </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/temperatura.js"></script>
+
+</body>
+</html>

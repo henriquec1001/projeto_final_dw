@@ -1,0 +1,24 @@
+[
+  {
+    "icon": "aperture",
+    "bg": "bg-danger",
+    "name": "Temperatura Atual",
+    "value": "0/0",
+    "link": "grafico-temperatura.html"
+  },
+  
+  {
+    "icon": "airplay",
+    "bg": "bg-info",
+    "name": "Quem somos",
+    "value": "0 %",
+    "link": "equipe.html"
+  },
+  {
+    "icon": "info",
+    "bg": "bg-success",
+    "name": "Ajuda",
+    "value": "dhcp",
+    "link": "ajuda.html"
+  }
+]
